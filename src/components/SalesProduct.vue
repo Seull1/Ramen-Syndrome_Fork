@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 async function jsons() {
     //const response = await fetch("http://localhost:3000/sales");
-    const response = await fetch("https://ramen-syndrome-jsonserver.fly.dev/sales");
+    const response = await fetch("http://localhost:3000/sales");
     const jsonData = await response.json();
     return jsonData;
 }
